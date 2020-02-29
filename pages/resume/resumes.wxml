@@ -3,7 +3,7 @@
 
 <view >
     <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
-        <view  class="resume-page" bindtap='onJumpMore' data-category-id="{{item.category_id}}" >
+        <view bindtap='onJumpMore' data-category-id="{{item.category_id}}" >
             <template is="resumeItem" data="{{...item}}" />
         </view>
     </block>
