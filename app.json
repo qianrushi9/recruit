@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/homes/home",
+    "pages/details/detail",
+    "pages/personal/personal",
+    "pages/categorys/category",
+    "pages/single-category/single-category",
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/personal-collection/personal-collection",
+    "pages/personal-info/personal-info",
+    "pages/personal-publish/personal-publish",
+    "pages/recruit-detail/recruit-detail",
+    "pages/about/about",
+    "pages/test/test",
+    "pages/resume/resumes"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cc3333",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "鲁园人才服务",
+    "backgroundColor": "#f0f0f0",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "color": "#000000",
+    "selectedColor": "#cc3333",
+    "list": [
+      {
+        "pagePath": "pages/homes/home",
+        "text": "招聘",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-select.png"
+      },
+      {
+        "pagePath": "pages/resume/resumes",
+        "text": "求职简历",
+        "iconPath": "/images/category.png",
+        "selectedIconPath": "/images/category-select.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/images/personal.png",
+        "selectedIconPath": "/images/personal-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,17 @@
+/* pages/resume/resumes.wxss */
+@import "../../template/resume-item/resume-item-template.wxss";
+
+.resume-page{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #bebebe;
+    padding: 5px;
+}
+
+/* .resume-page{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+} */

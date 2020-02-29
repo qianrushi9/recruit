@@ -1,0 +1,19 @@
+<template name="recruitItem">
+  <view class="recruit-detail-page">
+    <image class='recruit-detail-left' src='{{img}}'></image>
+    <view class="recruit-detail-tap">
+      <view class="recruit-detail-title">
+        <text>名稱：{{name}}</text>
+      </view>
+      <view class="recruit-detail-title">
+        <text>電話號：{{phone}}</text>
+      </view>
+      <view class="recruit-detail-title">
+        <text>簡介：{{description}}</text>
+      </view> 
+      <view class="recruit-detail-title">
+        <text>薪水{{salary}}</text>
+      </view>
+    </view>
+  </view>
+</template>

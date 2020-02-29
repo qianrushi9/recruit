@@ -1,0 +1,10 @@
+/* pages/test/test.wxss */
+
+.test-page {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #bebebe;
+  padding: 5px;
+}

@@ -1,0 +1,37 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+<view class='item'>
+ <view class='title'>鲁园人才服务</view>
+ <text class='sub-title'>兼职·招聘·校园</text>
+ 
+</view>
+
+<view class='dashed item'></view>
+
+<view class='item'>
+<image src='../../images/地址.png' class='img'></image>
+<text class='text'>沈阳鲁园</text>
+</view>
+
+<view class='item'>
+<image src='../../images/团队.png' class='img'></image>
+<text class='text'>Michael</text>
+</view>
+
+<view class='item'>
+<image src='../../images/电话.png' class='img'></image>
+<text class='text'>13720026510</text>
+</view>
+
+<view class='item'>
+<image src='../../images/QQ.png' class='img'></image>
+<text class='text'>814835736</text>
+</view>
+
+
+<!-- <view class='item'>
+<image src='../../images/网站.png' class='img'></image>
+<text class='text'>http://www.hstc.edu.cn/</text>
+</view> -->
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/test/test.wxml-->
+
+<view class="test-page">
+<!-- <view style="clo"> -->
+  <view style='width:100px;height:100px'>
+    <text>33ss</text>
+    <!-- <image src="/images/QQ.png" style='width:100px;height:100px'></image> -->
+  </view>
+  <view style='width:100px;height:100px'>
+    <text>33ss</text>
+    <!-- <image src="/images/QQ.png" style='width:100px;height:100px'></image> -->
+  </view>
+  <!-- <image class='recruit-detail-left' src="/images/QQ.png"></image> -->
+  <view class='recruit-detail-tap'>
+    <view class="recruit-detail-title">
+      <text>"test"</text>
+    </view>
+    <view class="recruit-detail-title">
+      <text>"test"</text>
+    </view>
+    <view class="recruit-detail-title">
+      <text>"test"</text>
+    </view>
+  </view>
+</view>

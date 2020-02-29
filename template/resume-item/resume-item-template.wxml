@@ -1,0 +1,13 @@
+<template name="resumeItem">
+  <view class='resume-home-container'>
+    <view>
+      <image style="width:100px;height:100px" src='{{img}}'></image>
+    </view>
+    <!-- <image style="width:100px;height:100px" src='{{img}}'></image>
+       <text class='resume-home-title'>{{name}}</text> -->
+    <view class="resume-home-view1">
+      <text class='resume-home-title'>{{name}}</text>
+      <text class='resume-home-title'>{{name}}</text>
+    </view>
+  </view>
+</template>

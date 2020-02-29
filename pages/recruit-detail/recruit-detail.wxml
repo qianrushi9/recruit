@@ -1,0 +1,14 @@
+<import src="../../template/recruit-detail-item/recruit-detail-item-template.wxml" />
+
+<view wx:if="{{categoryPageShow}}">
+  <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
+    <view bindtap='onJumpMore' data-category-id="{{item.category_id}}">
+      <template is="recruitItem" data="{{...item}}" />
+    </view>
+    <view class='recruit-detail-line'></view>
+  </block>
+</view>
+
+<view class='search-page' wx:if="{{searchPageShow}}">
+  搜索时候显示的页面
+</view>
