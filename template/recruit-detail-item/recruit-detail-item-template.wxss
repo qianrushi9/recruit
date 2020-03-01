@@ -1,14 +1,16 @@
 .recruit-detail-page {
   flex: 1;
   display: flex;
+  margin-left: 15rpx;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   padding: 5px;
 }
 
 .recruit-detail-left {
   display: flex;
-  justify-items: center;
+  justify-items: left;
+  justify-content: left;
   width: 94.91px;
   height: 84.91px; 
 }

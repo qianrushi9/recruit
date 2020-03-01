@@ -1,10 +1,24 @@
 <!--pages/resume/resumes.wxml-->
 <import src="../../template/resume-item/resume-item-template.wxml" /> 
 
+<view>
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+        <block wx:for="{{imagesPath}}" wx:for-item="item" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item.header_image}}" data-news-id="{{item.header_id}}" catchtap='onPostDetail' ></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
 <view >
     <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
         <view bindtap='onJumpMore' data-category-id="{{item.category_id}}" >
             <template is="resumeItem" data="{{...item}}" />
         </view>
     </block>
+</view>
+
+<view bindtap='onEmployeePublish'>
+  <image class='icon-publish' src='/images/publish.png'></image>
 </view>

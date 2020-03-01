@@ -34,6 +34,12 @@
   height: 5rpx;
 }
 
-
+.recruit-empty-page {
+  flex: 1;
+  display: flex;
+  margin-left: 15rpx; 
+  justify-content: center;
+  padding: 5px;
+}
 
 

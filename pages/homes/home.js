@@ -24,10 +24,6 @@ Page({
       {
         "header_id": 2,
         "header_image": "../../images/ali.jpg"
-      },
-      {
-        "header_id": 3,
-        "header_image": "../../images/touxiang0.jpg"
       }
     ];
     this.setData({
@@ -39,13 +35,7 @@ Page({
 
   onJumpTap: function(e) {
     console.log('onJumpTap' + e.data.value)
-    console.log(e.type)
-    // wx.navigateTo({
-    //   url: '../recruit-detail/recruit-detail'
-    // })
-    // wx.navigateTo({
-    //   url: '../recruit-detail/recruit-detail'
-    // })
+    console.log(e.type) 
   },
   /*
    * 页面相关事件处理函数--监听用户下拉动作
@@ -85,7 +75,7 @@ Page({
 
   onJumpPublish() {
     wx.navigateTo({
-      url: '../publish/publish'
+      url: '../publish/publish?identity=company'
     })
   }
 })

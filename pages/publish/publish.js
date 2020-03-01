@@ -1,13 +1,12 @@
 // pages/publish/publish.js
 const utils = require('../../utils/util.js');
 var newsAll = require("../../data/homedata.js");
-var type = "酒店" ;
-
+var type = "酒店";
 Page({
   data: {
+    identity: '',
     array: ['酒店', '餐饮', '超市', '美容美发', '家政', '汽修', '保健服务', '其他'],
-    objectArray: [
-      {
+    objectArray: [{
         id: 0,
         name: '酒店'
       },
@@ -41,18 +40,23 @@ Page({
       }
     ],
     index: 0,
-    type:''
+    type: '',
   },
 
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    type = objectArray[0].name;
+  bindPickerChange: function(e) {
+    console.log('picker发送选择改变，index = ', e.detail.value)
+    type = this.data.objectArray[e.detail.value].name;
     this.setData({
       index: e.detail.value
     })
+    console.log('picker发送选择改变，携带值为', type) 
   },
+
   onLoad: function(options) {
-   
+    console.log('onLoad value is :' + options.identity)
+    this.setData({
+      identity: options.identity
+    })
   },
 
   /**
@@ -100,33 +104,27 @@ Page({
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     //发送请求给 mi-home addRecruit
     //发送数据给服务器 addRecruit
-    var formValue = e.detail.value; 
+    var formValue = e.detail.value;
     console.log(' formVale1 =', formValue.phone)
-   
-     
-    var getUrl = '/addrecruit?name=' + formValue.introduce + '&phone=' + formValue.phone + '&description=' + formValue.introducedetail + '&type=' + type;
-    // log.i('getUrl = '+getUrl)
+    var getUrl = '/add_recruit?name=' + formValue.introduce + '&phone=' + formValue.phone + '&description=' + formValue.introducedetail + '&type=' + type + '&identity=' + this.data.identity;
     console.log('getUrl = ' + getUrl)
-    
+
     //设计 分类类型
     utils.get(getUrl).then(res => {
       var data = res.data;
       console.log('addrecruit is : ' + data);
       var jsonData = JSON.parse(data);
-      console.log('current service is :' + jsonData.companyBeans[0].name)
-      console.log('addrecruit description is : ' + jsonData.companyBeans[0].description);
+      console.log('current service is :' + jsonData.name)
+      console.log('addrecruit description is : ' + jsonData.description);
       if (res.status == 200) {
-        // log.i('addrecruit is : '+data)
         console.log('addrecruit description is : ' + jsonData.companyBeans[0].description);
-        // that.setData({
-        //   weather: weather,
+        // that.setData({ 
         //   Loadinghidden: true
         // });
       }
     }).catch(res => {
       console.log(res);
     });
-
   },
 
 

@@ -17,6 +17,19 @@ Page({
     this.setData({
       category: contentAll.category
     })
+    var imagesPath = [{
+      "header_id": 1,
+      "header_image": "../../images/tengxun.jpg"
+    },
+    {
+      "header_id": 2,
+      "header_image": "../../images/ali.jpg"
+    }
+    ];
+    this.setData({
+      content: contentAll.content,
+      imagesPath: imagesPath
+    });
   },
 
   /**
@@ -66,5 +79,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onEmployeePublish() {
+    wx.navigateTo({
+      url: '../publish/publish?identity=' +'employee'
+    })
   }
+  
 })

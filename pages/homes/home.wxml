@@ -1,6 +1,6 @@
 <import src="../../template/news-item/news-item-template.wxml" />
 
-<!-- <view>
+<view>
     <swiper indicator-dots="true" autoplay="true" circular="true">
         <block wx:for="{{imagesPath}}" wx:for-item="item" wx:key="{{index}}">
             <swiper-item>
@@ -8,7 +8,7 @@
             </swiper-item>
         </block>
     </swiper>
-</view> -->
+</view>
 
 <navigation-button bindmyevent="onJumpTap"></navigation-button>
 

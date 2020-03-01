@@ -8,7 +8,9 @@
     <view class='recruit-detail-line'></view>
   </block>
 </view>
-
+<view wx:else>
+    <view class="recruit-empty-page">暫時沒有招聘信息哦~</view>
+</view>
 <view class='search-page' wx:if="{{searchPageShow}}">
   搜索时候显示的页面
 </view>
