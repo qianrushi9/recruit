@@ -11,12 +11,15 @@
     </swiper>
 </view>
 
-<view >
+<view wx:if="{{resumePageShow}}">
     <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
         <view bindtap='onJumpMore' data-category-id="{{item.category_id}}" >
             <template is="resumeItem" data="{{...item}}" />
         </view>
     </block>
+</view>
+<view wx:else>
+    <view class="resume-empty-page">暫時沒有招聘信息哦~</view>
 </view>
 
 <view bindtap='onEmployeePublish'>

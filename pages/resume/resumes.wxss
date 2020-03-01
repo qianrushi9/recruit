@@ -18,3 +18,12 @@
     right: 20px;
     z-index: 100;
 }
+
+.resume-empty-page {
+  flex: 1;
+  display: flex;
+  margin-left: 15rpx; 
+  justify-content: center;
+  padding: 5px;
+}
+
