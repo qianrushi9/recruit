@@ -30,13 +30,13 @@
     "list": [
       {
         "pagePath": "pages/homes/home",
-        "text": "招聘",
+        "text": "招聘主页",
         "iconPath": "/images/home.png",
         "selectedIconPath": "/images/home-select.png"
       },
       {
         "pagePath": "pages/resume/resumes",
-        "text": "求职简历",
+        "text": "人才库",
         "iconPath": "/images/category.png",
         "selectedIconPath": "/images/category-select.png"
       },

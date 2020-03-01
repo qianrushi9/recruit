@@ -1,13 +1,23 @@
 <template name="resumeItem">
   <view class='resume-home-container'>
     <view>
-      <image style="width:100px;height:100px" src='{{img}}'></image>
+      <image style="width:100px;height:90px" src='/images/人才.jpg'></image>
     </view>
     <!-- <image style="width:100px;height:100px" src='{{img}}'></image>
        <text class='resume-home-title'>{{name}}</text> -->
-    <view class="resume-home-view1">
-      <text class='resume-home-title'>{{name}}</text>
-      <text class='resume-home-title'>{{name}}</text>
+    <view class="resume-detail-tap">
+      <view class="resume-detail-title">
+        <text>姓名：{{name}}</text>
+      </view>
+      <view class="resume-detail-title">
+        <text>電話：{{phone}}</text>
+      </view>
+      <view class="resume-detail-title">
+        <text>工作经验：{{description}}</text>
+      </view>
+      <view class="resume-detail-title">
+        <text>期望薪资：{{salary}}</text>
+      </view>
     </view>
   </view>
 </template>

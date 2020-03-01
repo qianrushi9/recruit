@@ -1,18 +1,19 @@
 <template name="recruitItem">
   <view class="recruit-detail-page">
-    <image class='recruit-detail-left' src='{{img}}'></image>
+    <!-- <image class='recruit-detail-left' src='{{img}}'></image> -->
+    <image class='recruit-detail-left' src='/images/招聘.jpg'></image>
     <view class="recruit-detail-tap">
       <view class="recruit-detail-title">
-        <text>名稱：{{name}}</text>
+        <text>公司名称：{{name}}</text>
       </view>
       <view class="recruit-detail-title">
-        <text>電話號：{{phone}}</text>
+        <text>電話：{{phone}}</text>
       </view>
       <view class="recruit-detail-title">
-        <text>簡介：{{description}}</text>
+        <text>岗位详情：{{description}}</text>
       </view> 
       <view class="recruit-detail-title">
-        <text>薪水{{salary}}</text>
+        <text>薪水：{{salary}}</text>
       </view>
     </view>
   </view>

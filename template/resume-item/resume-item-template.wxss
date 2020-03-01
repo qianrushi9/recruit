@@ -29,10 +29,17 @@
     padding: 30rpx 20rpx;
 }
 
-.resume-home-title{
-    font-size: 35rpx;
-    letter-spacing: 5rpx;
-    margin-bottom: 18rpx;
+.resume-detail-tap {
+  display: flex;
+  flex-direction: column;
+  justify-content: left; 
+  margin-left: 10.91px;
+  /* justify-content: center; *//* align-items: flex-start; */
+}
+
+.resume-detail-title{
+  margin-left: 20rpx;
+  font-size: 38rpx;
 }
 
 .sub-container{

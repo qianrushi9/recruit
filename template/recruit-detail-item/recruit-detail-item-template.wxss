@@ -8,10 +8,9 @@
 
 .recruit-detail-left {
   display: flex;
-  justify-items: left;
-  width: 44.91px;
-  height: 44.91px;
-  margin-top: 12.73px;
+  justify-items: center;
+  width: 94.91px;
+  height: 84.91px; 
 }
 
 .recruit-detail-tap {
