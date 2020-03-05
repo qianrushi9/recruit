@@ -9,41 +9,42 @@ Component({
 
   /**
    * 组件的初始数据
+   *  ['建筑', '家庭', '餐饮', '家庭维修', '服务', '驾驶', '物流', '普工'],
    */
   data: {
     info: [
       [{
           "img": "/images/jisuanji.png",
-          "name": "酒店"
+          "name": "建筑"
         },
         {
           "img": "/images/shuxue.png",
-          "name": "餐饮"
+          "name": "家庭"
         },
         {
           "img": "/images/wuli.png",
-          "name": "超市"
+          "name": "餐饮"
         },
         {
           "img": "/images/wenxue.png",
-          "name": "美容美发"
+          "name": "家庭维修"
         }
       ],
       [{
           "img": "/images/shengwu.png",
-          "name": "家政"
+        "name": "服务"
         },
         {
           "img": "/images/huaxue.png",
-          "name": "汽修"
+          "name": "驾驶"
         },
         {
           "img": "/images/yinyue.png",
-          "name": "保健服务"
+          "name": "物流"
         },
         {
           "img": "/images/more.png",
-          "name": "其他"
+          "name": "普工"
         }
       ]
     ]

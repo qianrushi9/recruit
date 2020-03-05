@@ -1,5 +1,13 @@
 <import src="../../template/recruit-detail-item/recruit-detail-item-template.wxml" />
 
+<view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        职业类型：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+
 <view wx:if="{{categoryPageShow}}">
   <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
     <view bindtap='onJumpMore' data-category-id="{{item.category_id}}">

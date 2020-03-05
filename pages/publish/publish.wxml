@@ -1,5 +1,13 @@
 <form bindsubmit="formSubmit">
   <view class='detail-container'>
+
+  <view class="section"> 
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          职业：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+        </view>
+      </picker>
+    </view>
     <view>
       <text class='news-title'>招聘简介:</text>
       <input class='introduce' name="introduce" type='text' placeholder="请输入信息"></input>
@@ -14,18 +22,8 @@
       <text class='news-title'>薪资:</text>
       <input class='introduce' name="salary" type='number' placeholder="请输入薪资"></input>
 
-      <button bindtap='uploadImg' hidden="true">上传图片</button>
-
       <!-- <text class='news-title'>图片预览:</text> -->
       <!-- <image src='{{imgSrc}}'></image> -->
-    </view>
-
-    <view class="section"> 
-      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-        <view class="picker">
-          职业类型：{{array[index]}}
-        </view>
-      </picker>
     </view>
 
     <view class='submit'>

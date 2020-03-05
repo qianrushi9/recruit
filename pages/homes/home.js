@@ -19,11 +19,7 @@ Page({
   onLoad: function(options) {
     var imagesPath = [{
         "header_id": 1,
-        "header_image": "../../images/tengxun.jpg"
-      },
-      {
-        "header_id": 2,
-        "header_image": "../../images/ali.jpg"
+        "header_image": "../../images/bg_work.jpg"
       }
     ];
     this.setData({
