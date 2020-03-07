@@ -1,2 +1,33 @@
 <!--pages/personal-publish/personal-publish.wxml-->
-<mine-head-img></mine-head-img>
+<view class='container'>
+  <view wx:if="{{!hasData}}">
+    <image src='../../images/nothing.jpg' mode='widthFix'></image>
+  </view>
+  <view class="list" style="display:flex;flex-direction:column" wx:for="{{content}}" wx:key="id">
+    <view class='list_item' style="display:flex;flex-direction:column" bindtap="viewPublishDetail" data-index="{{index}}">
+      <view class="item_header">
+        <view>
+          <text style="font-size: 35rpx;">{{item.job_title}}</text>
+        </view>
+        <view>
+          <text class="salary">{{item.job_salary}}</text>
+        </view>
+      </view>
+      <view class="item_body  txt-gray">
+        <view>
+          <text style="font-size: 30rpx;">{{item.job_requirements}}</text>
+        </view>
+      </view>
+      <view class="item_bottom">
+        <view>
+          <button class="btn" catchtap="modifyPublishDetail" data-index="{{index}}">编辑</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view bindtap='onJumpPublish'>
+  <image class='icon-publish' src='/images/publish.png'></image>
+</view>

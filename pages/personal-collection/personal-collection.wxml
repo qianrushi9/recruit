@@ -1,9 +1,13 @@
 <!--pages/personal-collection/personal-collection.wxml-->
 
-<mine-head-img></mine-head-img>
-
 <view class='container'>
     <view wx:if="{{!hasData}}">
         <image src='../../images/nothing.jpg' mode='widthFix'></image>
     </view>
 </view>
+
+<block wx:for="{{content}}" wx:for-item="item" wx:key="index">
+  <view bindtap='onPostDetail' data-news-id="{{item.id}}">
+    <template is="newsItem" data="{{...item}}" />
+  </view>
+</block>

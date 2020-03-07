@@ -21,7 +21,7 @@ Page({
     var userInfo = authUtil.loginSession.getSession();
     if (!utils.isJSNotEmpty(userInfo)) {
       console.log('un oauthed,go to login');
-      wx.navigateTo({
+      wx.redirectTo({
         url: '../login/login',
       })
     } else {

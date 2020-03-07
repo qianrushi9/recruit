@@ -1,10 +1,8 @@
 /* pages/personal-publish/personal-publish.wxss */
-.container{
-    margin-bottom: 50rpx;
-}
 .list{
   margin: 20rpx;
-  margin-top:5rpx;
+  margin-top:20rpx;
+
 }
 .list_item{
   border: 0rpx rgb(211, 207, 207) solid;
@@ -19,7 +17,7 @@
   display: flex;
   flex-direction:row; 
   justify-content:space-between;
-  border-bottom: 0rpx rgb(211, 207, 207) solid;
+  border-bottom: 1rpx rgb(211, 207, 207) solid;
 }
 
 .item_body{
@@ -39,15 +37,15 @@
   font-size: 30rpx;
 }
 
-button::after{ 
-	border: none; 
+
+.detail {
+    display: flex;   
+    flex-direction:column;
+    margin-left:30rpx;
+    margin-top:30rpx;
+    margin-right: 20rpx;
 }
-.btn {
-    border: 1rpx rgb(224, 223, 223) solid;
-    width: 70px;
-    border-radius: 20px;
-    background: white;
-    color: rgb(0, 0, 0);
-    font-size: 25rpx;
-    padding:0;
+
+.submit {
+   margin: 20rpx;
 }

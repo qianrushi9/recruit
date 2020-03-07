@@ -68,7 +68,7 @@ Page({
     authUtil.loginSession.setRole(that.data.role.selRole);
 
     wx.switchTab({
-      url: '/pages/personal/personal'
+      url: '/pages/homes/home'
     })
 
   },

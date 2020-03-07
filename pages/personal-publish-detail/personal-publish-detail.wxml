@@ -1,0 +1,52 @@
+
+<view class="list" style="display:flex;flex-direction:column" >
+  <view class='list_item' style="display:flex;flex-direction:column"   >
+    <view class="item_header">
+      <view>
+        <text style="font-size: 35rpx;">{{detailData.job_title}}</text>
+      </view>
+    </view>
+    <view class="item_body  ">
+      <view>
+        <text style="font-size: 30rpx;" class="txt-gray">{{detailData.job_requirements}}</text>
+      </view>
+      <view>
+        <text class="salary"  >{{detailData.job_salary}}</text>
+      </view>
+      <view>
+        <label hidden="true" style="font-size: 30rpx;margin-right:15rpx;color:gray">工作地点 :</label>
+        <text style="font-size: 30rpx;">{{detailData.job_city}}</text>
+      </view>
+      <view>
+        <text  class='txt-gray' style="font-size:25rpx;">{{detailData.job_address}}</text>
+      </view>
+    </view>
+    <view class="item_bottom">
+      <view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="list" style="display:flex;flex-direction:column" >
+  <view class='list_item' style="display:flex;flex-direction:column"   >
+    <view class="item_header">
+      <view>
+        <text style="font-size: 35rpx;">招聘详情</text>
+      </view>
+    </view>
+    <view class="item_body   ">
+      <!-- <view style="">
+        <text style="font-size: 25rpx; padding:12rpx" class="txt-gray">{{detailData.job_tag}}</text>
+      </view> -->
+      <view>
+        <text  style="font-size:25rpx;">{{detailData.job_detail}}</text>
+      </view>
+    </view>
+    <view class="item_bottom">
+      <view>
+      </view>
+    </view>
+  </view>
+</view>
+
