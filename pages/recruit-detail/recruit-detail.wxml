@@ -1,6 +1,5 @@
 <import src="../../template/recruit-detail-item/recruit-detail-item-template.wxml" />
 
-
 <view wx:if="{{categoryPageShow}}">
   <view class="section">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
