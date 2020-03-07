@@ -1,13 +1,13 @@
 <!--page/userauth/userauth.wxml-->
 <view class="parent">
   <view class="auth" >
-    <view class="row r-center" style="  margin-top:10%">
-      <image src="/images/QQ.png" style="width:200rpx;height:200rpx" />
+    <!-- <view class="bg_class" style="  margin-top:10%">
+      <image src="/images/bg_work.jpg" />
 
-    </view>
-    <view class="row r-center" style="margin-top:100rpx">
+    </view> -->
+    <!-- <view class="row r-center" style="margin-top:100rpx">
       <text style="font-size: 40rpx;"></text>
-    </view>
+    </view> -->
     <view class="row r-center" style=" ">
       <text class = "txt-gray">请选择您的身份</text>
     </view>

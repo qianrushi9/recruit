@@ -9,7 +9,7 @@
     </picker>
   </view>
   <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
-    <view bindtap='onJumpMore' data-category-id="{{item.category_id}}">
+    <view bindtap='onJumpMore1' data-category-id="{{item.category_id}}">
       <template is="recruitItem" data="{{...item}}" />
     </view>
     <view class='recruit-detail-line'></view>

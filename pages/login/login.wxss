@@ -9,9 +9,15 @@
     margin-left:50rpx;
     margin-top:10rpx;
     margin-right: 50rpx;
-
 }
 
+.bg_class {
+    align-items: center;
+    margin-top: 30rpx;
+    justify-content: center;
+    height: 290rpx; 
+   padding: 30rpx;
+}
 
 .item {
   display: flex;
