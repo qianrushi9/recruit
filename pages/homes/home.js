@@ -1,5 +1,6 @@
 const app = getApp();
 const utils = require('../../utils/util.js');
+var authUtil = require('../../utils/auth.js');
 var contentAll = require("../../data/homedata.js")
 
 Page({
@@ -17,21 +18,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    var imagesPath = [{
+    var userInfo = authUtil.loginSession.getSession();
+    if (!utils.isJSNotEmpty(userInfo)) {
+      console.log('un oauthed,go to login');
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    } else {
+      console.log(' oauthed ,enter home page'+userInfo.name);
+      var imagesPath = [{
         "header_id": 1,
         "header_image": "../../images/bg_work.jpg"
-      }
-    ];
-    this.setData({
-      content: contentAll.content,
-      imagesPath: imagesPath
-    });
-
+      }];
+      this.setData({
+        content: contentAll.content,
+        imagesPath: imagesPath
+      });
+    }
   },
 
   onJumpTap: function(e) {
     console.log('onJumpTap' + e.data.value)
-    console.log(e.type) 
+    console.log(e.type)
   },
   /*
    * 页面相关事件处理函数--监听用户下拉动作

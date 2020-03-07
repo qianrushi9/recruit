@@ -7,18 +7,25 @@
   padding: 5px;
 }
 
+.left-view {
+  display: flex;
+  justify-content: left;
+  justify-items: center;
+  width: 94.91px;
+  height: 84.91px;
+}
+
 .recruit-detail-left {
   display: flex;
-  justify-items: left;
-  justify-content: left;
+  justify-items: center;
   width: 94.91px;
-  height: 84.91px; 
+  height: 84.91px;
 }
 
 .recruit-detail-tap {
   display: flex;
   flex-direction: column;
-  justify-content: left; 
+  justify-content: left;
   margin-left: 10.91px;
   /* justify-content: center; *//* align-items: flex-start; */
 }
@@ -26,6 +33,12 @@
 .recruit-detail-title {
   margin-left: 20rpx;
   font-size: 38rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .recruit-detail-count {

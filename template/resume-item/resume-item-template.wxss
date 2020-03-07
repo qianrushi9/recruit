@@ -5,6 +5,7 @@
     background-color: #fff;
     border-bottom: 1px solid #bebebe;
     align-items: flex-start;
+    margin-top: 5px;
     padding: 5px;
 }
 

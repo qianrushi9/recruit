@@ -1,0 +1,28 @@
+<!--page/userauth/userauth.wxml-->
+<view class="parent">
+  <view class="auth" >
+    <view class="row r-center" style="  margin-top:10%">
+      <image src="/images/QQ.png" style="width:200rpx;height:200rpx" />
+
+    </view>
+    <view class="row r-center" style="margin-top:100rpx">
+      <text style="font-size: 40rpx;"></text>
+    </view>
+    <view class="row r-center" style=" ">
+      <text class = "txt-gray">请选择您的身份</text>
+    </view>
+
+    <view class="item radius_l {{role.selRole==1?role.highlight:role.normal}}" style="margin-top:10rpx" bindtap="selRole"  data-index="1">
+      <image src="/images/QQ.png" style="width:100rpx;height:100rpx" />
+      <text  style="margin-left:20rpx;font-size: 40rpx;font-weight:bold">公司招聘</text>
+    </view>
+    <view class="item radius_l {{role.selRole==2?role.highlight:role.normal}}" style="margin-top:20rpx" bindtap="selRole"  data-index="2">
+      <image src="/images/QQ.png" style="width:100rpx;height:100rpx" />
+      <text  style="margin-left:20rpx;font-size: 40rpx;font-weight:bold">个人求职</text>
+    </view>
+
+    <view class="row" style="margin-top:50rpx" >
+      <button class="btn-large" style="width:90%"  open-type="getUserInfo" bindgetuserinfo="getUserInfo"  >微信授权登陆</button>
+    </view>
+  </view>
+</view>

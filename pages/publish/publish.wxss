@@ -1,44 +1,62 @@
 @import "../../lib/weui.wxss";
+
 .detail-container {
-     display: flex; 
-    flex-direction: column;
-     padding: 15px; 
-     margin-bottom: 80rpx; 
-    align-items:center; 
-   justify-content:center;
-    
+  display: flex;
+  flex-direction: column; 
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 80rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-title {
+  font-size: 32rpx;
+  color: rgb(31, 5, 5);
+  letter-spacing: 3px;
+  line-height: 30px;
+  /* font-weight: bold; */
+  margin-bottom: 8px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .news-title {
-    font-size: 35rpx;
-    color: #ccc ;
-    letter-spacing: 3px;
-    line-height: 30px;
-    /* font-weight: bold; */
-    margin-bottom: 8px;
+  font-size: 28rpx;
+  color: #ccc;
+  letter-spacing: 3px;
+  line-height: 30px;
+  /* font-weight: bold; */
+  margin-bottom: 8px;
 }
 
 .introduce {
-  border: 1px solid #ccc ;
-  margin-bottom: 10px ;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 25rpx;
 }
 
 .news-image {
-    width: 100%;
-    height: 450rpx;
-    margin:18px 0;
+  width: 100%;
+  height: 450rpx;
+  margin: 18px 0;
 }
 
 .submit {
-    position: fixed ;  
-   bottom: 10px ; 
-    /* margin-top: 60px  */
-    align-items:center; 
-    
+  /* position: fixed ;   */
+  bottom: 20px;
+  /* margin-top: 60px  */
+  width: 90%;
+  margin-top: 20rpx;
+  align-items: center;
 }
 
-.picker{
-    padding: 13px;
-    background-color: rgb(255, 255, 255);
+.picker {
+  padding: 8px;
+  background-color: "#cc3333";
 }
-

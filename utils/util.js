@@ -63,6 +63,14 @@ function isEmptyObject(obj) {
   return true;
 }
 
+function isJSNotEmpty(content) {
+  if (content != null && content != '' && content != 'undefined') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 //跳转到补全信息
 function jumpToProfile() {
   wx.showModal({
@@ -127,6 +135,7 @@ module.exports = {
   promptNetworkNotConnect: promptNetworkNotConnect,
   jumpToProfile: jumpToProfile,
   isEmptyObject: isEmptyObject,
+  isJSNotEmpty: isJSNotEmpty,
   get: get,
   post: post,
   showConfirm: showConfirm

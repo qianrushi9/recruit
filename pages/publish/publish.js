@@ -151,7 +151,7 @@ Page({
     //发送数据给服务器 addRecruit
     var formValue = e.detail.value;
     console.log(' formVale1 =', formValue.phone)
-    var getUrl = '/add_recruit?name=' + formValue.introduce + '&phone=' + formValue.phone + '&description=' + formValue.introducedetail + '&type=' + type + '&subType=' + subType + '&identity=' + this.data.identity;
+    var getUrl = '/add_recruit?name=' + formValue.introduce + '&phone=' + formValue.phone + '&description=' + formValue.introducedetail + '&type=' + type + '&subType=' + subType + '&identity=' + this.data.identity + '&salary=' + formValue.salary;
     console.log('getUrl = ' + getUrl)
 
     //设计 分类类型

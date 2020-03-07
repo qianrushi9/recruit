@@ -1,7 +1,9 @@
 <template name="recruitItem">
   <view class="recruit-detail-page">
     <!-- <image class='recruit-detail-left' src='{{img}}'></image> -->
+    
     <image class='recruit-detail-left' src='/images/招聘.jpg'></image>
+    
     <view class="recruit-detail-tap">
       <view class="recruit-detail-title">
         <text>岗位类型：{{subType}}</text>

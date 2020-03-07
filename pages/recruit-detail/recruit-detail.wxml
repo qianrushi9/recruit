@@ -1,14 +1,14 @@
 <import src="../../template/recruit-detail-item/recruit-detail-item-template.wxml" />
 
-<view class="section">
+
+<view wx:if="{{categoryPageShow}}">
+  <view class="section">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-      <view class="picker">
+      <view class="picker"> 
         职业类型：{{array[index]}}
       </view>
     </picker>
   </view>
-
-<view wx:if="{{categoryPageShow}}">
   <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
     <view bindtap='onJumpMore' data-category-id="{{item.category_id}}">
       <template is="recruitItem" data="{{...item}}" />
@@ -17,7 +17,7 @@
   </block>
 </view>
 <view wx:else>
-    <view class="recruit-empty-page">暫時沒有招聘信息哦~</view>
+  <view class="recruit-empty-page">暫時沒有招聘信息哦~</view>
 </view>
 <view class='search-page' wx:if="{{searchPageShow}}">
   搜索时候显示的页面
