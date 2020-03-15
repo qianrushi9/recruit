@@ -1,0 +1,62 @@
+<!--page/userauth/userauth.wxml-->
+<view class="parent">
+  <view class="rows">
+    <view class="item">
+      <text style="font-size: 40rpx;">行业类型：{{detailData.type}}</text>
+      <text style="font-size: 30rpx;margin-top:20rpx;">工种：{{detailData.subType}}</text>
+    </view>
+    <view class="item">
+      <view class="item-row">
+        <text style="font-size: 40rpx;font-weight:bold">联系人：{{detailData.name}}</text>
+      </view>  
+       <view class="item-row" style=";margin-top:20rpx">
+        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">工资</label>
+        <text style="font-size: 30rpx">{{detailData.salary}}</text>
+      </view>
+      <view class="item-row" style=";margin-top:20rpx">
+        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">地区</label>
+        <text style="font-size: 30rpx">{{detailData.phone}}</text>
+      </view>
+      <view class="item-row">
+        <label class="txt-gray" style="margin-right:12rpx;;font-size: 28rpx;">电话</label>
+        <text style="font-size: 30rpx;">{{detailData.phone}}</text>
+      </view>
+      <image class='personal-img  item-right' src="/images/QQ.png"></image>
+    </view>
+
+    <view class="item">
+      <view class="item-header">
+        <text style="font-size: 40rpx;">详细信息:</text>
+      </view>
+      <text class='txt-gray personal-description'>{{detailData.description}}</text>
+    </view>
+
+    <view class="item" hidden="true">
+      <view class="item-header">
+        <text style="font-size: 30rpx;">工作经历</text>
+      </view>
+
+      <block class="list-item" wx:for="{{detailData.work_experience}}" wx:key="id">
+        <view class="item-header">
+          <view class="item-row">
+            <image src="/images/tengxun.jpg" style="width: 60px;  height: 30px;"></image>
+            <view class="item" style="margin-left:20rpx">
+              <text>{{item.position}}</text>
+              <text class="txt-gray txt-l">{{item.company}}</text>
+              <text class="txt-gray txt-l">{{item.startTime}}~{{item.endTime}}</text>
+            </view>
+          </view>
+          <text class='modify txt-l' bindtap="modifyJobExperience" data-index="{{index}}">编辑</text>
+        </view>
+        <view>
+          <text>工作内容</text>
+        </view>
+        <view>
+          <text class="txt-gray txt-l">1.寻找自我，树立自我\n2.迷茫时不必祈求神灵</text>
+        </view>
+
+        <view class='line'></view>
+      </block>
+    </view>
+  </view>
+</view>

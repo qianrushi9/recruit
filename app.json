@@ -9,6 +9,7 @@
     "pages/index/index",
     "pages/publish/publish",
     "pages/personal-publish/personal-publish",
+    "pages/company-publihdetail/company-publihdetail",
     "pages/personal-collection/personal-collection",
     "pages/personal-info/personal-info",
     "pages/personal-publish-detail/personal-publish-detail",

@@ -7,6 +7,7 @@ Page({
    */
   data: {
     categoryPageShow: true,
+    category:'',
     searchPageShow: false,
     xxImageShow: false,
     type: '',
@@ -58,10 +59,8 @@ Page({
     console.log('recruit detail page enter, type =', this.data.type)
     //獲取最新數據
     this.get_company_recruit();
-    // this.setData({
-    //   category: contentAll.category
-    // })
   },
+ 
 
   get_company_recruit: function () {
     var getUrl = '/get_company_recruit?type=' + this.data.type;
@@ -125,12 +124,17 @@ Page({
     });
   },
 
-  onJumpMore: function(event) {
+  /**
+   * 只能跳转到公司子页
+   */
+  onJumpMoreDetail: function(event) {
     /* 跳到分类详情页面，并把当前分类的 id 传过去 */
-    var categoryId = event.currentTarget.dataset.categoryId;
+    var categoryId = event.currentTarget.dataset.index;
     console.log(categoryId);
+    var companyDetail = this.data.category[categoryId];
+    console.log('companyDetail=='+companyDetail.name);
     wx.navigateTo({
-      url: '../single-category/single-category?categoryId=' + categoryId
+      url: '../company-publihdetail/company-publihdetail?companyDetail=' + JSON.stringify(companyDetail)
     })
   },
   bindPickerChange: function (e) {
