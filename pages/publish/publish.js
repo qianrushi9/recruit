@@ -150,6 +150,15 @@ Page({
     //发送请求给 mi-home addRecruit
     //发送数据给服务器 addRecruit
     var formValue = e.detail.value;
+    if(this.data.identity == 'company'){
+      this.addCompanyRecruit(formValue);
+    }else{
+      // this.
+    }
+  },
+
+
+  addCompanyRecruit: function (formValue) {
     console.log(' formVale1 =', formValue.phone)
     var getUrl = '/add_recruit?name=' + formValue.introduce + '&phone=' + formValue.phone + '&description=' + formValue.introducedetail + '&type=' + type + '&subType=' + subType + '&identity=' + this.data.identity + '&salary=' + formValue.salary;
     console.log('getUrl = ' + getUrl)
@@ -171,6 +180,7 @@ Page({
       console.log(res);
     });
   },
+
 
 
   /**
