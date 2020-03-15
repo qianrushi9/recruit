@@ -1,13 +1,5 @@
 <form bindsubmit="formSubmit">
 
-  <view class="section">
-    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-      <view class="picker">
-        <text class='top-title'>职业：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
-      </view>
-    </picker>
-  </view>
-
   <view class='detail-container'>
     <view wx:if="{{identity=='company'}}">
       <text class='news-title'>招聘职位:</text>
@@ -15,7 +7,16 @@
 
       <text class='news-title'>基本要求:</text>
       <input class='introduce' name="job_requirements" type='text' placeholder="请输入职位基本要求，用空格分隔" value="{{detailData.job_requirements}}"></input>
-      <!-- <image class='news-image' src='{{newsData.home_image}}'></image> -->
+
+      <text class='news-title'>所需工种:</text>
+      <view class="section">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            <text class='top-title'>{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
+          </view>
+        </picker>
+      </view>
+
       <text class='news-title'>招聘详情:</text>
       <textarea name="introducedetail" placeholder='请输入详情介绍' class='introduce' value="{{detailData.job_detail}}"></textarea>
 
@@ -34,7 +35,7 @@
 
       <text class='news-title'>年齡:</text>
       <input class='introduce' name="age" type='text' placeholder="请输入年齡" value="{{detailData.job_requirements}}"></input>
-    
+
       <text class='news-title'>地址:</text>
       <input class='introduce' name="address" type='text' placeholder="请输入地址" value="{{detailData.job_salary}}"></input>
 
@@ -44,7 +45,7 @@
       <text class='news-title'>联系电话:</text>
       <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
 
-        <!-- <image class='news-image' src='{{newsData.home_image}}'></image> -->
+      <!-- <image class='news-image' src='{{newsData.home_image}}'></image> -->
       <text class='news-title'>自我介紹:</text>
       <textarea name="selfIntroduce" placeholder='自我介紹' class='introduce' value="{{detailData.job_detail}}"></textarea>
 

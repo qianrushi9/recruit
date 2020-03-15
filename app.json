@@ -20,7 +20,7 @@
     "pages/resume/resumes"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "鲁园人才服务",
     "backgroundColor": "#f0f0f0",
@@ -34,13 +34,13 @@
     "list": [
       {
         "pagePath": "pages/homes/home",
-        "text": "招聘主页",
+        "text": "招聘",
         "iconPath": "/images/home.png",
         "selectedIconPath": "/images/home-select.png"
       },
       {
         "pagePath": "pages/resume/resumes",
-        "text": "人才库",
+        "text": "求职",
         "iconPath": "/images/category.png",
         "selectedIconPath": "/images/category-select.png"
       },

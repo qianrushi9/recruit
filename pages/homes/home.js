@@ -11,7 +11,9 @@ Page({
   data: {
     name: 'michael1',
     phone: '13720026510',
-    description: '未知'
+    description: '未知',
+    category:'',
+    categoryPageShow: false,
   },
 
   /**
@@ -34,7 +36,37 @@ Page({
         content: contentAll.content,
         imagesPath: imagesPath
       });
+      this.get_company_recruit();
     }
+  },
+
+  get_company_recruit: function () {
+    var getUrl = '/get_company_recruit?type=建筑';
+    console.log('getUrl = ' + getUrl)
+    //设计 分类类型
+    utils.get(getUrl).then(res => {
+      var data = res.data;
+      if (data === 'null') {
+        console.log('addrecruit data is null ');
+        //展示空 view
+        this.setData({
+          categoryPageShow: false,
+        })
+      } else {
+        console.log('addrecruit is : ' + data);
+        var jsonData = JSON.parse(data);
+        // console.log('addrecruit description is : ' + jsonData.description);
+        if (res.status == 200) {
+
+        }
+        this.setData({
+          categoryPageShow: true,
+          category: jsonData
+        })
+      }
+    }).catch(res => {
+      console.log(res);
+    });
   },
 
   onJumpTap: function(e) {

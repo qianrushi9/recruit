@@ -3,7 +3,7 @@
 <view wx:if="{{categoryPageShow}}">
   <view class="section">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-      <view class="picker"> 
+      <view class="picker">
         职业类型：{{array[index]}}
       </view>
     </picker>

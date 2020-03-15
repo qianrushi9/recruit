@@ -154,6 +154,7 @@ Page({
       this.addCompanyRecruit(formValue);
     }else{
       // this.
+      this.addCompanyRecruit(formValue);
     }
   },
 
