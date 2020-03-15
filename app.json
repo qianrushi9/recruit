@@ -20,8 +20,8 @@
     "pages/resume/resumes"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#cc3333",
-    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "鲁园人才服务",
     "backgroundColor": "#f0f0f0",
     "backgroundTextStyle": "light"
@@ -30,7 +30,7 @@
     "position": "bottom",
     "borderStyle": "black",
     "color": "#000000",
-    "selectedColor": "#cc3333",
+    "selectedColor": "#0099ff",
     "list": [
       {
         "pagePath": "pages/homes/home",

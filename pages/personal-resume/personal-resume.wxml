@@ -54,16 +54,12 @@
         <view>
           <text class="txt-gray txt-l">1.寻找自我，树立自我\n2.迷茫时不必祈求神灵</text>
         </view>
-
         <view class='line'></view>
       </block>
-
-
 
       <view class="row r-center">
         <text>+ 添加工作经历</text>
       </view>
-
     </view>
   </view>
 </view>

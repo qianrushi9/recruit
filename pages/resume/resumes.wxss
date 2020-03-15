@@ -11,8 +11,8 @@
 }
 
 .icon-publish{
-    width: 100rpx;
-    height: 100rpx;
+    width: 180rpx;
+    height: 180rpx;
     position: fixed;
     bottom: 15px;
     right: 20px;

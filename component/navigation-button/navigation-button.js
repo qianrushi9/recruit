@@ -14,36 +14,36 @@ Component({
   data: {
     info: [
       [{
-          "img": "/images/jisuanji.png",
+          "img": "/images/jisuanji.jpg",
           "name": "建筑"
         },
         {
-          "img": "/images/shuxue.png",
+          "img": "/images/shuxue.jpg",
           "name": "家庭"
         },
         {
-          "img": "/images/wuli.png",
+          "img": "/images/wuli.jpg",
           "name": "餐饮"
         },
         {
-          "img": "/images/wenxue.png",
+          "img": "/images/wenxue.jpg",
           "name": "家庭维修"
         }
       ],
       [{
-          "img": "/images/shengwu.png",
+        "img": "/images/shengwu.jpg",
         "name": "服务"
         },
         {
-          "img": "/images/huaxue.png",
+          "img": "/images/huaxue.jpg",
           "name": "驾驶"
         },
         {
-          "img": "/images/yinyue.png",
+          "img": "/images/yinyue.jpg",
           "name": "物流"
         },
         {
-          "img": "/images/more.png",
+          "img": "/images/more.jpg",
           "name": "普工"
         }
       ]
