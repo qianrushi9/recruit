@@ -137,6 +137,7 @@ Page({
       url: '../company-publihdetail/company-publihdetail?companyDetail=' + JSON.stringify(companyDetail)
     })
   },
+  
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.data.subType = this.data.array[e.detail.value];

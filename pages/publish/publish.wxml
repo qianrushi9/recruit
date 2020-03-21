@@ -2,29 +2,27 @@
 
   <view class='detail-container'>
     <view wx:if="{{identity=='company'}}">
-      <text class='news-title'>招聘职位:</text>
-      <input class='introduce' name="introduce" type='text' placeholder="请输入职位名称" value="{{detailData.job_title}}"></input>
+      <text class='news-title'>标题:</text>
+      <input class='introduce' name="introduce" type='text' placeholder="请输入招聘职称" value="{{detailData.job_title}}"></input>
 
-      <text class='news-title'>基本要求:</text>
-      <input class='introduce' name="job_requirements" type='text' placeholder="请输入职位基本要求，用空格分隔" value="{{detailData.job_requirements}}"></input>
+      <text class='news-title'>地区:</text>
+      <input class='introduce' name="address" type='text' placeholder="请输入地址" value="{{detailData.address}}"></input>
 
+       <text class='news-title'>联系人:</text>
+      <input class='introduce' name="introduce" type='text' placeholder="请输入联系人" value="{{detailData.name}}"></input>
+      <text class='news-title'>联系电话:</text>
+      <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
       <text class='news-title'>所需工种:</text>
       <view class="section">
         <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
           <view class="picker">
-            <text class='top-title'>{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
+            <text class='top-title'>{{multiArray[0][multiIndex[0]]}}—{{multiArray[1][multiIndex[1]]}}</text>
           </view>
         </picker>
       </view>
 
       <text class='news-title'>招聘详情:</text>
       <textarea name="introducedetail" placeholder='请输入详情介绍' class='introduce' value="{{detailData.job_detail}}"></textarea>
-
-      <text class='news-title'>薪资:</text>
-      <input class='introduce' name="salary" type='text' placeholder="请输入薪资" value="{{detailData.job_salary}}"></input>
-
-      <text class='news-title'>联系电话:</text>
-      <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
     </view>
     <view wx:else>
       <text class='news-title'>姓名:</text>
@@ -52,7 +50,7 @@
     </view>
 
     <view class='submit'>
-      <button form-type='submit' type='primary' style='font-size: 35rpx;'>发布招聘信息</button>
+      <button  form-type='submit' type='primary' style='font-size: 35rpx;background-color: blueviolet'>发布招聘信息</button>
     </view>
   </view>
 </form>

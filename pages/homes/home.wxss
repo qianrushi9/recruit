@@ -1,4 +1,4 @@
-@import "../../template/news-item/news-item-template.wxss";
+@import "../../template/recruit-detail-item/recruit-detail-item-template.wxss";
 
 swiper {
     width: 100%;

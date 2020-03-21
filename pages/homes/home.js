@@ -109,6 +109,20 @@ Page({
     wx.stopPullDownRefresh();
   },
 
+  /**
+   * 只能跳转到公司子页
+   */
+  onJumpMoreDetail: function (event) {
+    /* 跳到分类详情页面，并把当前分类的 id 传过去 */
+    var categoryId = event.currentTarget.dataset.index;
+    console.log(categoryId);
+    var companyDetail = this.data.category[categoryId];
+    console.log('companyDetail==' + companyDetail.name);
+    wx.navigateTo({
+      url: '../company-publihdetail/company-publihdetail?companyDetail=' + JSON.stringify(companyDetail)
+    })
+  },
+
   onJumpPublish() {
     wx.navigateTo({
       url: '../publish/publish?identity=company'

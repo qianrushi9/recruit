@@ -1,4 +1,3 @@
-/* pages/categorys/category.wxss */
 @import "../../template/recruit-detail-item/recruit-detail-item-template.wxss";
 
 .search-group {

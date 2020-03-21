@@ -1,4 +1,4 @@
-<import src="../../template/news-item/news-item-template.wxml" />
+<import src="../../template/recruit-detail-item/recruit-detail-item-template.wxml" />
 
 <view>
     <swiper indicator-dots="true" autoplay="true" circular="true">
@@ -18,11 +18,12 @@
   <text decode="{{true}}">—&nbsp;&nbsp;&nbsp;&nbsp;招聘信息&nbsp;&nbsp;&nbsp;&nbsp;—</text>
 </view>
 
-<block wx:for="{{content}}" wx:for-item="item" wx:key="index">
-  <view bindtap='onPostDetail' data-news-id="{{item.id}}">
-    <template is="newsItem" data="{{...item}}" />
-  </view>
-</block>
+ <block wx:for="{{category}}" wx:for-item="item" wx:key="index" data-index='{{index}}'>
+    <view bindtap='onJumpMoreDetail' data-index='{{index}}'>
+      <template is="recruitItem" data="{{...item}}" />
+    </view>
+    <view class='recruit-detail-line'></view>
+  </block>
 
 <view bindtap='onJumpPublish'>
   <image class='icon-publish' src='/images/publish.png'></image>

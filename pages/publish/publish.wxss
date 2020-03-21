@@ -3,17 +3,17 @@
 .detail-container {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 80rpx;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 100rpx;
   align-items: center;
   justify-content: center;
 }
 
 .top-title {
   font-size: 32rpx;
-  color: rgb(31, 5, 5);
+  color: rgb(69, 113, 214);
   letter-spacing: 3px;
   line-height: 30px;
   /* font-weight: bold; */
@@ -27,8 +27,8 @@
 }
 
 .news-title {
-  font-size: 28rpx;
-  color: #ccc;
+  font-size: 38rpx;
+  color: rgb(14, 12, 12);
   letter-spacing: 3px;
   line-height: 30px;
   /* font-weight: bold; */
@@ -38,7 +38,7 @@
 .introduce {
   border: 1px solid #ccc;
   margin-bottom: 10px;
-  font-size: 25rpx;
+  font-size: 35rpx;
 }
 
 .news-image {
@@ -48,17 +48,16 @@
 }
 
 .submit {
-  bottom: 20px;
-  /* margin-top: 60px  */
+  bottom: 20px; 
   width: 90%;
   margin-top: 20rpx;
-  align-items: center;
+  align-items: center; 
   position: fixed;
   right: 20px;
-  z-index: 100;
+  z-index: 100;  
 }
 
-.picker {
-  padding: 8px;
+.picker { 
   background-color: "#cc3333";
 }
+ 
