@@ -14,37 +14,37 @@ Component({
   data: {
     info: [
       [{
-          "img": "/images/jisuanji.jpg",
+          "img": "/images/jianzhu.jpg",
           "name": "建筑"
         },
         {
-          "img": "/images/shuxue.jpg",
-          "name": "家庭"
+          "img": "/images/jiazheng.jpg",
+          "name": "家政"
         },
         {
-          "img": "/images/wuli.jpg",
+          "img": "/images/canyin.jpg",
           "name": "餐饮"
         },
         {
-          "img": "/images/wenxue.jpg",
-          "name": "家庭维修"
+          "img": "/images/jiazhuang.jpg",
+          "name": "家装"
         }
       ],
       [{
-        "img": "/images/shengwu.jpg",
-        "name": "服务"
+        "img": "/images/jigong.jpg",
+        "name": "普工/技工"
         },
         {
-          "img": "/images/huaxue.jpg",
-          "name": "驾驶"
+          "img": "/images/wuliu.jpg",
+          "name": "物流/仓储"
         },
         {
-          "img": "/images/yinyue.jpg",
-          "name": "物流"
+          "img": "/images/xiaoshou.jpg",
+          "name": "销售"
         },
         {
-          "img": "/images/more.jpg",
-          "name": "普工"
+          "img": "/images/renshi.jpg",
+          "name": "人事/行政"
         }
       ]
     ]

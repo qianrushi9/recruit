@@ -10,15 +10,15 @@
         <text style="font-size: 40rpx;font-weight:bold">联系人：{{detailData.name}}</text>
       </view>  
        <view class="item-row" style=";margin-top:20rpx">
-        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">工资</label>
+        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">工资：</label>
         <text style="font-size: 30rpx">{{detailData.salary}}</text>
       </view>
       <view class="item-row" style=";margin-top:20rpx">
-        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">地区</label>
+        <label class="txt-gray" style="margin-right:12rpx;font-size: 28rpx;">地区：</label>
         <text style="font-size: 30rpx">{{detailData.phone}}</text>
       </view>
       <view class="item-row">
-        <label class="txt-gray" style="margin-right:12rpx;;font-size: 28rpx;">电话</label>
+        <label class="txt-gray" style="margin-right:12rpx;;font-size: 28rpx;">电话：</label>
         <text style="font-size: 30rpx;">{{detailData.phone}}</text>
       </view>
       <image class='personal-img  item-right' src="/images/QQ.png"></image>

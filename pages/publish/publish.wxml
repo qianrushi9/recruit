@@ -50,7 +50,7 @@
     </view>
 
     <view class='submit'>
-      <button  form-type='submit' type='primary' style='font-size: 35rpx;background-color: blueviolet'>发布招聘信息</button>
+      <button  form-type='submit' type='primary' style='font-size: 35rpx'>发布招聘信息</button>
     </view>
   </view>
 </form>

@@ -35,10 +35,16 @@
   margin-bottom: 8px;
 }
 
-.introduce {
+/* .introduce {
   border: 1px solid #ccc;
   margin-bottom: 10px;
   font-size: 35rpx;
+} */
+
+.introduce {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 25rpx;
 }
 
 .news-image {
@@ -55,6 +61,10 @@
   position: fixed;
   right: 20px;
   z-index: 100;  
+}
+
+.submit button{
+  background-color: rgb(64, 125, 255);
 }
 
 .picker { 
