@@ -1,5 +1,5 @@
 <!--pages/resume/resumes.wxml-->
-<import src="../../template/resume-item/resume-item-template.wxml" /> 
+<import src="../../template/resume-item/resume-item-template.wxml" />
 
 <!-- <view>
     <swiper indicator-dots="true" autoplay="true" circular="true">
@@ -11,22 +11,22 @@
     </swiper>
 </view> -->
 
- <view class="section">
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-      <view class="picker"> 
-        职业类型：{{array[index]}}
-      </view>
-    </picker>
-  </view>
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      职业类型：{{array[index]}}
+    </view>
+  </picker>
+</view>
 <view wx:if="{{resumePageShow}}">
-    <block wx:for="{{category}}" wx:for-item="item" wx:key="index">
-        <view bindtap='onJumpMore' data-category-id="{{item.category_id}}" >
-            <template is="resumeItem" data="{{...item}}" />
-        </view>
-    </block>
+  <block wx:for="{{category}}" wx:for-item="item" wx:key="index" data-index='{{index}}'>
+    <view bindtap='onJumpMoreDetail' data-index='{{index}}'>
+      <template is="resumeItem" data="{{...item}}" />
+    </view>
+  </block>
 </view>
 <view wx:else>
-    <view class="resume-empty-page">暫時沒有招聘信息哦~</view>
+  <view class="resume-empty-page">暫時沒有招聘信息哦~</view>
 </view>
 
 <view bindtap='onEmployeePublish'>

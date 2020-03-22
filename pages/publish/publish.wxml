@@ -8,7 +8,7 @@
       <text class='news-title'>地区:</text>
       <input class='introduce' name="address" type='text' placeholder="请输入地址" value="{{detailData.address}}"></input>
 
-       <text class='news-title'>联系人:</text>
+      <text class='news-title'>联系人:</text>
       <input class='introduce' name="introduce" type='text' placeholder="请输入联系人" value="{{detailData.name}}"></input>
       <text class='news-title'>联系电话:</text>
       <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
@@ -26,7 +26,7 @@
     </view>
     <view wx:else>
       <text class='news-title'>姓名:</text>
-      <input class='introduce' name="name" type='text' placeholder="请输入姓名" value="{{detailData.job_title}}"></input>
+      <input class='introduce' name="introduce" type='text' placeholder="请输入姓名" value="{{detailData.job_title}}"></input>
 
       <text class='news-title'>性別:</text>
       <input class='introduce' name="sex" type='text' placeholder="请输入性別" value="{{detailData.job_requirements}}"></input>
@@ -42,15 +42,21 @@
 
       <text class='news-title'>联系电话:</text>
       <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
-
+      <text class='news-title'>所需工种:</text>
+      <view class="section">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            <text class='top-title'>{{multiArray[0][multiIndex[0]]}}—{{multiArray[1][multiIndex[1]]}}</text>
+          </view>
+        </picker>
+      </view>
       <!-- <image class='news-image' src='{{newsData.home_image}}'></image> -->
       <text class='news-title'>自我介紹:</text>
       <textarea name="selfIntroduce" placeholder='自我介紹' class='introduce' value="{{detailData.job_detail}}"></textarea>
-
     </view>
 
     <view class='submit'>
-      <button  form-type='submit' type='primary' style='font-size: 35rpx'>发布招聘信息</button>
+      <button form-type='submit' type='primary' style='font-size: 35rpx'>发布招聘信息</button>
     </view>
   </view>
 </form>
