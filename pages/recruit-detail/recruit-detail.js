@@ -1,5 +1,5 @@
 const utils = require('../../utils/util.js');
-var contentAll = require("../../data/homedata.js")
+var configData = require("../../data/recruit_detail_data.js")
 var subType = "";
 Page({
   /**
@@ -53,6 +53,59 @@ Page({
     this.setData({
       type: options.type
     })
+    switch (this.data.type) {
+      case "建筑":
+        this.setData({
+           array: configData.arrayJianzhu,
+           objectArray: configData.jianzhuObjArray
+        })
+        break;
+      case "家政":
+        this.setData({
+          array: configData.arrayJiazheng,
+          objectArray: configData.jiazhengObjArray
+        })
+        break;  
+      case "餐饮":
+        this.setData({
+          array: configData.arrayCanyin,
+          objectArray: configData.canyinObjArray
+        })
+        break;
+      case "家装":
+        this.setData({
+          array: configData.arrayJiazhuang,
+          objectArray: configData.jiazhuangObjArray
+        })
+        break;  
+      case "普工/技工":
+        this.setData({
+          array: configData.arrayJigong,
+          objectArray: configData.jigongObjArray
+        })
+        break;
+      case "物流/仓储":
+        this.setData({
+          array: configData.arrayWuliu,
+          objectArray: configData.wuliuObjArray
+        })
+        break;  
+      case "销售":
+        this.setData({
+          array: configData.arrayXiaoshou,
+          objectArray: configData.xiaoshouObjArray
+        })
+        break;
+      case "人事/行政":
+        this.setData({
+          array: configData.arrayRenshi,
+          objectArray: configData.renshiObjArray
+        })
+        break;
+      default:
+        break;
+    }
+
     wx.setNavigationBarTitle({
       title: this.data.type,
     })
@@ -147,7 +200,7 @@ Page({
     })
     //全部，获取一级分类
     //其他 ，获取二级分类内容
-    if('全部' == subType){
+    if('全部' == this.data.subType){
       this.get_company_recruit();
     }else{
       this.get_sub_company_recruit();

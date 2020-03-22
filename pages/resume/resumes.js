@@ -154,7 +154,7 @@ Page({
     })
     //全部，获取一级分类
     //其他 ，获取二级分类内容
-    if ('全部' == type) {
+    if ('全部' == this.data.type) {
       this.get_employee_recruit();
     } else {
       this.get_sub_employee_recruit();
