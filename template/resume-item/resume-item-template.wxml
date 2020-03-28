@@ -1,7 +1,7 @@
 <template name="resumeItem">
   <view class='resume-home-container'>
     <view>
-      <image style="width:100px;height:90px" src='/images/luyuan_logo.jpg'></image>
+      <image style="width:100px;height:80px" src='/images/luyuan_logo.jpg'></image>
     </view>
     <!-- <image style="width:100px;height:100px" src='{{img}}'></image>
        <text class='resume-home-title'>{{name}}</text> -->
@@ -15,9 +15,9 @@
       <view class="resume-detail-title">
         <text>工作经验：{{description}}</text>
       </view>
-      <view class="resume-detail-title">
+      <!-- <view class="resume-detail-title">
         <text>期望薪资：{{salary}}</text>
-      </view>
+      </view> -->
     </view>
   </view>
 </template>

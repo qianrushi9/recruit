@@ -32,7 +32,7 @@
 
 .recruit-detail-title {
   margin-left: 20rpx;
-  font-size: 38rpx;
+  font-size: 45rpx;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;

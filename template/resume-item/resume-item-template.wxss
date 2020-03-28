@@ -1,11 +1,10 @@
 .resume-home-container{
     display: flex;
     flex-direction: row;
-    margin-bottom: 40rpx;
+    margin-bottom: 8rpx;
     background-color: #fff;
     border-bottom: 1px solid #bebebe;
-    align-items: flex-start;
-    margin-top: 5px;
+    align-items: flex-start; 
     padding: 5px;
 }
 
@@ -40,7 +39,7 @@
 
 .resume-detail-title{
   margin-left: 20rpx;
-  font-size: 38rpx;
+  font-size: 45rpx;
 }
 
 .sub-container{

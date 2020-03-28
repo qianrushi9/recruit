@@ -14,9 +14,9 @@
       <view class="recruit-detail-title">
         <text>電話：{{phone}}</text>
       </view>
-      <view class="recruit-detail-title">
+      <!-- <view class="recruit-detail-title">
         <text>岗位详情：{{description}}</text>
-      </view>
+      </view> -->
     </view>
   </view>
 </template>
