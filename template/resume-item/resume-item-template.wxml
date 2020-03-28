@@ -1,7 +1,7 @@
 <template name="resumeItem">
   <view class='resume-home-container'>
     <view>
-      <image style="width:100px;height:90px" src='/images/人才.jpg'></image>
+      <image style="width:100px;height:90px" src='/images/luyuan_logo.jpg'></image>
     </view>
     <!-- <image style="width:100px;height:100px" src='{{img}}'></image>
        <text class='resume-home-title'>{{name}}</text> -->

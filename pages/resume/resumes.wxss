@@ -19,6 +19,13 @@
     z-index: 100;
 }
 
+.picker{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #1176E0;
+  /* background-color: blue; */
+}
+
 .resume-empty-page {
   flex: 1;
   display: flex;

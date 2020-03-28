@@ -30,7 +30,7 @@
     "position": "bottom",
     "borderStyle": "black",
     "color": "#000000",
-    "selectedColor": "#0099ff",
+    "selectedColor": "#1176E0",
     "list": [
       {
         "pagePath": "pages/homes/home",

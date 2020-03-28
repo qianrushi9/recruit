@@ -12,7 +12,7 @@
       <input class='introduce' name="introduce" type='text' placeholder="请输入联系人" value="{{detailData.name}}"></input>
       <text class='news-title'>联系电话:</text>
       <input class='introduce' name="phone" type='text' placeholder="请输入号码" value="{{detailData.contact_number}}"></input>
-      <text class='news-title'>所需工种:</text>
+      <text class='news-title'>行业工种:</text>
       <view class="section">
         <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
           <view class="picker">

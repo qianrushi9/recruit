@@ -14,7 +14,7 @@
 <view class="section">
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
-      职业类型：{{array[index]}}
+      行业工种：{{array[index]}}
     </view>
   </picker>
 </view>

@@ -25,7 +25,6 @@
     margin: auto 0 auto 10rpx;
 }
 
-
 .recruit-detail-line {
   background: #e0e3da;
   width: 100%;

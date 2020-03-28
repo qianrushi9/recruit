@@ -2,7 +2,7 @@
   <view class="recruit-detail-page">
     <!-- <image class='recruit-detail-left' src='{{img}}'></image> -->
     
-    <image class='recruit-detail-left' src='/images/招聘.jpg'></image>
+    <image class='recruit-detail-left' src='/images/luyuan_logo.jpg'></image>
     
     <view class="recruit-detail-tap">
       <view class="recruit-detail-title">

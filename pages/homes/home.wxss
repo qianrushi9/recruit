@@ -10,6 +10,13 @@ swiper image {
     height: 450rpx;
 }
 
+.recruit-detail-line {
+  background: #e0e3da;
+  width: 100%;
+  margin: 10rpx;
+  height: 5rpx;
+}
+
 .icon-publish{
     width: 180rpx;
     height: 180rpx;
@@ -20,9 +27,11 @@ swiper image {
 }
 
 .info-title{
+    
     padding-top: 5rpx;
     padding-bottom: 15rpx;
+    padding-left: 15rpx;
     border-bottom: 1px solid #eee;
-    text-align: center;
-    color: #bebebe;
+    text-align: left;
+    color:#1176E0; 
 }

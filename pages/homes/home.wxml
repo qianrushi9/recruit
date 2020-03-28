@@ -26,5 +26,5 @@
   </block>
 
 <view bindtap='onJumpPublish'>
-  <image class='icon-publish' src='/images/publish.png'></image>
+  <image class='icon-publish' src='/images/publish_company.jpg'></image>
 </view>
