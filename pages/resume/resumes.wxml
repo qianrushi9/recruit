@@ -30,5 +30,5 @@
 </view>
 
 <view bindtap='onEmployeePublish'>
-  <image class='icon-publish' src='/images/publish.png'></image>
+  <image class='icon-publish' src='/images/publish_employee.jpg'></image>
 </view>
