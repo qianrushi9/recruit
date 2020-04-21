@@ -9,6 +9,14 @@
     border-radius: 5px;
 }
 
+
+.picker{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #1176E0;
+  /* background-color: blue; */
+}
+
 .search-group icon {
     margin: auto 5px;
 }
